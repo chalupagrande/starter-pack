@@ -17,3 +17,6 @@ app.get('/', (req, res, next)=>{
   var b = req.body
   res.send("Hello World!")
 })
+
+app.listen(port)
+console.log('listening on ' + port)
