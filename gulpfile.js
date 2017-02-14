@@ -1,14 +1,16 @@
 var gulp        = require('gulp'),
     browserSync = require('browser-sync')
-    sass = require('gulp-sass'),
-    babel = require('gulp-babel'),
-    concat = require('gulp-concat')
+    sass        = require('gulp-sass'),
+    babel       = require('gulp-babel'),
+    concat      = require('gulp-concat'),
+    plumber     = require('gulp-plumber');
+
 
 
 gulp.task('serve', ['process', 'compile'], function(){
   browserSync.init({
     server: {
-      baseDir:'dist'
+      baseDir:'./'
     }
   })
 
