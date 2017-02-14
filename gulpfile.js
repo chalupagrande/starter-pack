@@ -22,15 +22,17 @@ gulp.task('serve', ['process', 'compile'], function(){
 
 gulp.task('compile', function(){
   return gulp.src('src/scripts/*.js')
-             .pipe(babel({
-               presets:['es2015']
-             }))
-             .pipe(gulp.dest('client/js'))
+              .pipe(plumber())
+              .pipe(babel({
+                presets:['es2015']
+              }))
+              .pipe(plumber.stop())
+              .pipe(gulp.dest('client/js'))
 })
 
 gulp.task('process', function(){
   return gulp.src('src/sass/*.scss')
-             .pipe(sass())
+             .pipe(sass().on('error', sass.logError))
              .pipe(concat('styles.css'))
              .pipe(gulp.dest('./client/css'))
 })
