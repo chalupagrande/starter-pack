@@ -6,6 +6,9 @@ This repo has the files you need to get started on a new project. Just switch th
 - full-stack
 - front-end
 - server
+- docker
+    - the DEV dependencies have been removed for creating a docker container
+    - https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address/
 
 ###Getting Started
 
