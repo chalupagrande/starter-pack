@@ -1,1 +1,0 @@
-{"version":3,"sources":["styles.scss"],"names":[],"mappings":"AAAA,IAAI,CAAA;EACF,gBAAgB,EAAC,IAAK;EACtB,KAAK,EAAC,KAAM,GACb","file":"styles.css","sourcesContent":["body{\n  background-color:blue;\n  color:white;\n}"]}
